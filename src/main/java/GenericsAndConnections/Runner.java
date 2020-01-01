@@ -46,7 +46,7 @@ public class Runner
         List<? extends IOException> excList2 = new ArrayList<>();
 //        excList2.add(new IOException()); // does not compile, we can't say for definite
 //        excList2.add(new Object()); // doesnt compile
-        excList2.add(new BindException());
+//        excList2.add(new BindException());
 
     }
 
