@@ -1,4 +1,5 @@
 package instanceoftest;
 
-abstract class Vehicle implements Moveable{
+abstract class Vehicle implements Moveable
+{
 }

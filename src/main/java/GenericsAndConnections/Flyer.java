@@ -1,5 +1,6 @@
 package GenericsAndConnections;
 
-public interface Flyer {
+public interface Flyer
+{
     void fly();
 }

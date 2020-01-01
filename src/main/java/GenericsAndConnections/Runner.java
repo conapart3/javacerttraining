@@ -5,7 +5,8 @@ import java.net.BindException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Runner {
+public class Runner
+{
 
     public static void main(String[] args)
     {
@@ -18,9 +19,11 @@ public class Runner {
 
         printme(list);
 
-        SomeInterface someInterface = new SomeInterface() {
+        SomeInterface someInterface = new SomeInterface()
+        {
             @Override
-            public void someMethod() {
+            public void someMethod()
+            {
                 System.out.println("someMethod");
             }
         };
@@ -62,7 +65,7 @@ public class Runner {
 
     public static void flyList(List<Flyer> list)
     {
-        for(Flyer f : list)
+        for (Flyer f : list)
         {
             System.out.println(f);
         }
@@ -70,7 +73,7 @@ public class Runner {
 
     public static void flyGeneric(List<? extends Flyer> list)
     {
-        for(Flyer f : list)
+        for (Flyer f : list)
         {
             System.out.println(f);
         }
@@ -78,7 +81,7 @@ public class Runner {
 
     public static void printMe(List<?> someList)
     {
-        for(Object o : someList)
+        for (Object o : someList)
         {
             System.out.println(o);
         }
@@ -87,7 +90,7 @@ public class Runner {
     public static void printme(List<? extends Number> numberList)
     {
         long count = 0;
-        for(Number n : numberList)
+        for (Number n : numberList)
         {
             count += n.longValue();
         }

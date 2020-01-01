@@ -3,7 +3,8 @@ package cat;
 import java.io.IOException;
 import java.util.InvalidPropertiesFormatException;
 
-abstract class Cat {
+abstract class Cat
+{
     //abstract void clean(); // compiles 1 - abstract class defines abstract method
     /*void clean()
     {
@@ -29,9 +30,13 @@ abstract class Cat {
 
     }*/ // does not compile with throws Exception on the method in Lion
 
-    void clean() throws IOException{}
+    void clean() throws IOException
+    {
+    }
 
-    void cleanMeImpl(){}
+    void cleanMeImpl()
+    {
+    }
 
     static final int cleaned = 2;
 }

@@ -19,12 +19,13 @@ public class Runner
         return sortedMap.subList(0, k);
     }
 
-    private Map<String, Integer> countWordOccurrences(String[] words) {
+    private Map<String, Integer> countWordOccurrences(String[] words)
+    {
         Map<String, Integer> countMap = new HashMap<>();
 
-        for(String s : words)
+        for (String s : words)
         {
-            if(countMap.keySet().contains(s))
+            if (countMap.keySet().contains(s))
             {
                 int incrememtedCounter = countMap.get(s) + 1;
                 countMap.put(s, incrememtedCounter);
@@ -55,6 +56,7 @@ public class Runner
         // WHEN ONTO THE NEXT WORD, COUNT IT, IF GREATER THAN PREVIOUS WORD COUNT THEN PUT TO INDEX 0 OF LIST OTHERWISE 1
         // THIS WILL ALLOW JUST 1 ITERATION OF THE ARRAY AND 1 LIST.
         // probably will still need to keep a hashmap
+        // or a treemap to alphabetically sort?
 
         return null;
     }

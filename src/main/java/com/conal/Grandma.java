@@ -2,7 +2,8 @@ package com.conal;
 
 import java.time.Month;
 
-public class Grandma {
+public class Grandma
+{
 
     public static void main(String[] args)
     {

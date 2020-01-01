@@ -1,8 +1,10 @@
 package instanceoftest;
 
-class Car extends Vehicle {
+class Car extends Vehicle
+{
     @Override
-    public void move() {
+    public void move()
+    {
 
     }
 }
