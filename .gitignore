@@ -1,5 +1,9 @@
-.idea
-.idea/*
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.logs
 *.iml
-.target
-.target/*
+.idea/
+.eclipse
