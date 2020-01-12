@@ -7,4 +7,9 @@ public class Goose implements Flyer
     {
 
     }
+
+    public int getWeight()
+    {
+        return 0;
+    }
 }
