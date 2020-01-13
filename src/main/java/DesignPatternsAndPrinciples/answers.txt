@@ -1,0 +1,32 @@
+N 1. A C E
+N 2. B - method defined as abstract in an interface - abstract isn't allowed here
+Y 3. A, D - abstract class can't be a functional interface, functional interface should have just 1 unimplemented method
+Y 4. A, D - if 2 params must have (), if one param has type declared so must other, one on its own should have () if type defined
+Y 5. b e f
+Y 6. a
+N 7. c e g
+N 8. c e f - are all members of an interface public or can some be made protected/package-private?
+Y 9. d f - can't be final, instance doesn't have to be called instance / getInstance()
+Y 10. d - an interface cannot extend more than one other interface at the same time can it?
+Y 11. a, f - "poof" is ok it knows this is the return. cannot redeclare the param variable from the lambda inside the lambda body. if using body needs {return ... ;}
+Y 12. c - x1 because the functional interface returns a boolean and toString() returns a string.
+N 13. b c e f - getters allowed, static would disassociate vars from the actual immutable object instance, making accessible anywhere
+Y 14. a b d e - Long not involved at all, brazilHornedFrog not a superclass of TurtleFrog
+Y 15. b c - cast to subclass needs explicit cast, classcastexceptions are runtime exceptions, e - ???
+N 16. e - can't define member variable in an interface, only static ones. Can't define static method without impl
+N 17. b c e f - ther is no javabean interface
+N 18. a e  - protected allows access to package and subclasses, package-private does not allow for subclasses outside the package, inheritance = is-a, b ???, f probably not
+Y 19. b d e - c ??? just use a constructor. a - immutable pattern
+N 20. f - it isn;t implementing the methods ofc
+Q p 102
+A p 552
+
+Y 1. c e -
+N 2. a - answer e - trick question as the concrete class didn't implement an interface.
+N 7. c e h - maybe don't need to make a copy so no g? h because we don't want Seal overridden - answer to include g!
+N 8. e f - c not e! they allow for multiple inheritance, they CANNOT be final, and all members are public
+y 13. b c e - not f because the values don't change so the methods are inherently syncrhonized, they dont change! duhhh
+y 16. f - cannot define
+y 17. b c f - mustn't have to use the lazy initialization
+n 18. a b d e - unsure of a, unsure of b, unsure of d, unsure of e -answer = a b e
+20. a - ok

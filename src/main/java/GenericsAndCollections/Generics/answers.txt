@@ -1,0 +1,29 @@
+Attempt 1, before the study
+
+1. d - don't really understand "the producst are not unique - what do they want? a set?"
+2. d - treemap because it will be sorted and each unique string can identify it
+3. e - bit of a guess - can you declare new ArrayList() without the type? if no type is declared, you have to check type / cast it before doing anything, line 7 probably compiler error
+4. e - haven't heard of ArrayDequeue. guessing a filo queue. assuming code compiles
+5. a (Integer is a Number), b (exception is a super of ClassCastException), f (Integer extends Number). not c is a Vector a List? I assume Vector is a 3 point node thing holding
+an x,y,z. not d HashSet isnt a List. not e can't declare List type like that, has to be concrete right?
+6. d - we can't use methods of Object because we'd need Hello<T extends Object> right? Maybe that is assumed by compiler? if so then f.
+7. a, b - Long is a Number, and passing primitives they will autobox up to object wrapper classes. watch out this was a set! and it added Number to a list
+8. f - can't remember tree.ceiling, finds index where it would be injected? assume it can't find it and throws exception?
+9. a c d (char can be added as a String) not b long is bigger than a double?
+10. d - what does compareTo of a string do? I think compare returns positive number if param2 > param1
+11. c if HashMap constructor does not take an int. ignoring line 3 it could be a 4*4=16
+12. a b - c...wtf is that, d...wtf is that, e - THrowable does not extend Exception
+13. b d - a-lets assume ArrayDequeue doesn't extend List. can you declare a List<?> l =...? lets assume yes. c-no because have to give ArrayList a type, e-why would Vector extend List?
+14. d if it uses text to compare due to compareTo method. - what are the methods to be implemented from Comparable and Comparator, does a TreeSet constructor take a Comparable or
+Comparator? I think it does. Do they mean , not .?
+15. a - think you have to sort a list before binarySearch. I think it sorts in asc, thenfinds the 1 at index 0
+16. a c e - comparable sounds more like a java util, comparator sounds like Collections?
+17. b d - b because wildcard ? should be used with super/extends, d because you have to create concrete thing as a real type!
+18. a b c f - can't instantiate object declared as a subclass, and try to instantiate as the superclass
+19. a - not sure about using queue and instantiating as a linked list?
+20. c
+21. a f
+22. b public static <T> T identity(T t) -> <T> defines the generic type T and T is the return type
+23. a b - ?
+24. b f - not a it needs s in the params, maybe c, maybe you can have () around 1 param without the type?
+25. guess g? - does map.merge(...) take the keys for the entries you want to merge, plus a strategy to merge them as a lambda? need to study merge function
