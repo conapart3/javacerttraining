@@ -1,6 +1,7 @@
 package leetcode.findkwords;
 
-import GenericsAndConnections.Goose;
+
+import GenericsAndCollections.Generics.Goose;
 
 import java.util.*;
 
